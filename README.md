@@ -40,13 +40,17 @@ cd calculadora-financeira
 
 2. Instale as dependências:
 ```bash
-pip install flet fpdf numpy-financial
+poetry init
 ```
 
 3. Execute a aplicação:
 ```bash
-python main.py
+poetry run flet run main.py
 ```
+
+Para rodar no poetry como aplicativo web use o comando:
+
+```poetry run flet run -w app.py```
 
 ## Como Usar
 
