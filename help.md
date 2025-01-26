@@ -1,6 +1,6 @@
 # Ajuda e Instruções
 
-## Calculadora Financeira
+## Valor futuro de um capital
 
 ### Instruções Gerais
 - Preencha 3 campos e o quarto será calculado
@@ -9,10 +9,10 @@
 - Para calcular o valor presente uniforme não preencha o campo do valor presente
 
 ### Campos
-- **Tempo**: Período do financiamento
 - **Taxa de Juros (%)**: Taxa de juros mensal
-- **Valor Presente**: Valor inicial
-- **Valor Futuro**: Valor final
+- **Número de Meses**: Período do investimento
+- **Valor Presente**: Valor inicial do investimento
+- **Valor Futuro**: Valor final do investimento
 
 ## Simulador de Empréstimos
 
@@ -21,6 +21,7 @@
 - O sistema oferece dois tipos de cálculo:
   - Tabela Price (parcelas fixas)
   - Tabela SAC (amortização constante)
+- Os resultados podem ser exportados em PDF ou CSV
 
 ### Campos
 - **Valor do empréstimo**: Valor total a ser emprestado
@@ -30,7 +31,6 @@
 - **Data da primeira parcela**: Selecione a data do primeiro pagamento
 
 ### Resultados
-- Os resultados podem ser exportados em PDF ou CSV
 - A tabela mostra detalhes de cada parcela:
   - Número da parcela
   - Data de vencimento
@@ -38,16 +38,24 @@
   - Amortização
   - Juros
   - Saldo devedor
+- Opções de exportação:
+  - PDF: Gera um relatório completo em formato PDF
+  - CSV: Gera uma planilha com todos os dados em formato CSV
 
-## Calculadora de Financiamento
+## Financiamento com prestações fixas
 
 ### Instruções Gerais
 - Preencha 3 campos e o quarto será calculado
 - Utilize o ponto como marcador decimal
-- Os valores podem ser calculados em prestações fixas
+- Se tiver 4 campos preenchidos irá apresentar um erro. Basta retirar um deles
 
 ### Campos
-- **Taxa de Juros (%)**: Taxa mensal de juros
+- **Taxa de Juros (%)**: Taxa mensal de juros do financiamento
 - **Número de Meses**: Prazo do financiamento
-- **Valor da Prestação**: Valor fixo mensal
-- **Valor Financiado**: Valor total financiado 
+- **Valor da Prestação**: Valor fixo mensal a ser pago
+- **Valor Financiado**: Valor total do financiamento
+
+### Observações
+- O sistema utiliza o método de prestações fixas (Tabela Price)
+- Os valores são calculados considerando juros compostos
+- Todos os valores monetários devem ser inseridos em Reais (R$) 

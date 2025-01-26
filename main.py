@@ -40,7 +40,7 @@ class MainApp:
             on_change=change_tab,
             tabs=[
                 ft.Tab(
-                    text="Calculadora Financeira",
+                    text="Valor futuro de um capital",
                     icon=ft.icons.CALCULATE,
                 ),
                 ft.Tab(
@@ -48,7 +48,7 @@ class MainApp:
                     icon=ft.icons.MONEY,
                 ),
                 ft.Tab(
-                    text="Calculadora de Financiamento",
+                    text="Financiamento com prestações fixas",
                     icon=ft.icons.ATTACH_MONEY,
                 ),
                 ft.Tab(
@@ -225,7 +225,7 @@ class MainApp:
 
         return ft.Column([
             ft.Text(
-                "Calculadora Financeira", 
+                "Valor futuro de um capital", 
                 size=30, 
                 weight="bold",
                 color="#24b694"
