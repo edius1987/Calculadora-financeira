@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "calculadoracidadao"
+version = "0.1.0"
+description = ""
+authors = ["edius1987 <ediusferreira@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flet = "^0.25.2"
+fpdf = "^1.7.2"
+numpy = "^2.2.2"
+pandas = "^2.2.3"
+numpy-financial = "^1.0.0"
+markdown = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
